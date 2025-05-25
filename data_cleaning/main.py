@@ -2,7 +2,7 @@ import pandas as pd
 import pyarrow.parquet as pq
 from pathlib import Path
 import logging
-from processing import *
+from cleaning import *
 from config import TABLE_FILE_MAP, PARQUET_CONFIG, TABLES_TO_PROCESS
 
 # Configure logging
