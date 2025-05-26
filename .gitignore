@@ -1,5 +1,6 @@
 data/
 output/
+processed_data/
 # Editors
 .vscode/
 .idea/

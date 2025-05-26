@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 def main():
     """Main function to process all tables and convert them to Parquet format."""
     data_path = Path("./data")
-    output_path = Path("./output")
+    output_path = Path("./processed_data")
     output_path.mkdir(parents=True, exist_ok=True)
 
     processor_map = {
