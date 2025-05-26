@@ -116,8 +116,8 @@ End Users / Analysts
 ### Installation Steps
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repository-name.git # TODO: Replace with actual repository URL
-    cd your-repository-name # TODO: Replace with actual repository name
+    git clone https://github.com/Muhammad-Abdelsattar/MIMIC-Healthcare-Data-Analytics.git mimic_DA
+    cd mimic_DA
     ```
 2.  **Configure Environment Variables:**
     - The `env/` directory contains template environment files for Docker Compose services (e.g., `core.env`, `hdfs.env`, `hive.env`, `mapred.env`, `yarn.env`).
@@ -137,6 +137,7 @@ End Users / Analysts
       ```
     - Place your raw CSV input files (e.g., `patients.csv`, `admissions.csv`, etc.) into this `data/` directory.
     - The data cleaning scripts expect specific file names and structures. Refer to the `data_cleaning/config.py` file or the "Directory Structure" section of this README for the list of expected CSV files. Ensure your input files match these configurations.
+    - To download the data: follow [Link](https://physionet.org/content/mimiciii-demo/1.4/)
 
 5.  **Build and Launch the Hadoop/Hive Cluster:**
     - From the project root directory, run the following command:
@@ -273,15 +274,8 @@ Potential future enhancements for this project include:
 *   **Comprehensive Test Suite:** Develop a more thorough testing suite for both the data cleaning scripts and the Hive table structures/queries.
 *   **Parameterize HQL Scripts:** Make HQL scripts more flexible by using variables for database names, table names, or paths.
 
-## Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature-name`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/your-feature-name`).
-5. Open a Pull Request.
-
-Please ensure your code adheres to any existing style guidelines and includes tests where appropriate.
-
 ## License
-This project is licensed under the MIT License. See the `LICENSE` file for details (if a `LICENSE` file is added later).
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
