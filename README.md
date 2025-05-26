@@ -230,9 +230,6 @@ Potential future enhancements for this project include:
 *   **Automate Data Loading to HDFS:** Develop scripts to automatically transfer processed Parquet files from `./processed_data/` to the appropriate HDFS locations, removing the manual `docker cp` and `hdfs dfs -put` steps.
 *   **Containerize Data Cleaning Script:** Package the Python data cleaning pipeline into a Docker image to make it a formal part of the `docker-compose` setup, rather than requiring a local Python environment.
 *   **Implement MapReduce/Spark Jobs:** Add examples of custom MapReduce or Spark jobs for more complex data processing or analytics tasks beyond Hive's capabilities.
-*   **Advanced Analytics & ML:** Integrate tools or libraries for advanced data analysis, machine learning model training, and serving using the data in HDFS/Hive.
-*   **Interactive Dashboard/UI:** Develop a web-based UI (e.g., using Dash/Plotly, Streamlit, or integrating with Superset/Metabase) for easier data exploration and visualization.
-*   **Enhanced Security:** Implement Kerberos or other security mechanisms for the Hadoop cluster.
 *   **CI/CD Pipeline:** Set up a Continuous Integration/Continuous Delivery pipeline for automated testing and deployment.
 *   **Comprehensive Test Suite:** Develop a more thorough testing suite for both the data cleaning scripts and the Hive table structures/queries.
 *   **Parameterize HQL Scripts:** Make HQL scripts more flexible by using variables for database names, table names, or paths.
