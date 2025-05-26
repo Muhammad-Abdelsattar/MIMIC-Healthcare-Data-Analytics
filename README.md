@@ -45,43 +45,8 @@ The project is structured around a Dockerized Hadoop ecosystem and a local Pytho
     *   Hive Server (HiveServer2) executes queries, reading data directly from HDFS.
     *   YARN manages the resources for Hive queries (which often translate to MapReduce or Tez jobs).
 
-**Text-based Diagram:**
-
-```
-External Data Sources (e.g., CSV files)
-       |
-       v
--------------------------
-| Python Data Cleaning  | (Local Environment)
-| (scripts in data_cleaning/) |
--------------------------
-       |
-       v
-Processed Parquet Files (in ./processed_data/)
-       |
-       v (Manual Load/Copy to HDFS)
---------------------------------------------------
-| Dockerized Hadoop & Hive Environment           |
-|                                                |
-|   --------------------     --------------------  |
-|   | HDFS             | --> | Hive             |  |
-|   | - Namenode       |     | - Hive Server    |  |
-|   | - Datanode       |     | - Metastore (DB) |  |
-|   --------------------     --------------------  |
-|           ^                                    |
-|           | (YARN for resource management)       |
-|   --------------------                           |
-|   | YARN             |                           |
-|   | - ResourceManager|                           |
-|   | - NodeManager    |                           |
-|   --------------------                           |
-|   (HistoryServer for job tracking)               |
-|                                                |
---------------------------------------------------
-       ^
-       | (User Interaction via Beeline, Hue, etc.)
-End Users / Analysts
-```
+**System Architecture:**
+![Architecture](./system_arch.png)
 
 ## Directory Structure
 - **`.gitignore`**: Specifies intentionally untracked files that Git should ignore.
