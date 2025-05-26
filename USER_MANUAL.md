@@ -17,11 +17,11 @@ Follow these steps to get the project environment up and running on your system:
     *   Open your terminal or command prompt.
     *   Clone the project repository using Git. Replace `<repository_url>` with the actual URL of the repository:
         ```bash
-        git clone https://github.com/yourusername/your-hadoop-project.git
+        git clone https://github.com/Muhammad-Abdelsattar/MIMIC-Healthcare-Data-Analytics.git mimic_DA
         ```
     *   Navigate into the cloned project directory. Replace `<project_directory_name>` with the actual name of the directory that was created (usually the same as the repository name):
         ```bash
-        cd your-hadoop-project
+        cd mimic_DA
         ```
 
 2.  **Configure Environment Variables (if necessary):**
