@@ -12,8 +12,6 @@ This project simulates a Hadoop cluster environment using Docker Compose. Its pr
 ### Out of Scope (for now, but can be Future Work):
 *   Actual MapReduce job execution beyond the internal operations performed by Hive.
 *   Real-time data streaming or processing capabilities.
-*   Advanced data analytics or machine learning model training.
-*   A dedicated user interface for interacting with the system, beyond the standard web UIs provided by Hadoop and Hive.
 
 ## Architecture Overview
 The project is structured around a Dockerized Hadoop ecosystem and a local Python-based data cleaning pipeline.
